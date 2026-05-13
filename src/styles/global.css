@@ -3,10 +3,7 @@
 @import './reset.css';
 @import './variables.css';
 
-/* =============================================
-   ESTILOS BASE GLOBALES
-============================================= */
-
+/* Estilos Base */
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -37,7 +34,7 @@ h6 {
   outline-offset: 3px;
 }
 
-/* Scrollbar personalizado para que combine con el tema */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }

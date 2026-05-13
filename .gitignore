@@ -15,7 +15,6 @@ out/
 
 # ========================
 # Variables de entorno
-# NUNCA subir archivos .env con credenciales
 # ========================
 .env
 .env.local
