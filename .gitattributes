@@ -1,0 +1,4 @@
+# Normaliza los saltos de línea a LF en el repositorio,
+# independientemente del sistema operativo.
+* text=auto eol=lf
+*.bat text eol=crlf
