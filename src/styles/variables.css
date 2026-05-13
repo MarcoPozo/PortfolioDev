@@ -1,0 +1,219 @@
+:root {
+
+  /* =============================================
+     COLORES — BRAND
+     Los tres colores identitarios del portfolio
+  ============================================= */
+  --color-brand-red:    #CC0000;
+  --color-brand-yellow: #FFD600;
+  --color-brand-black:  #0A0A0A;
+
+
+  /* =============================================
+     COLORES — FONDOS
+     Usamos varios niveles de oscuro para crear
+     profundidad visual (fondo, tarjetas, hover)
+  ============================================= */
+  --color-bg:           #0A0A0A;   /* fondo principal de la página */
+  --color-bg-secondary: #111111;   /* secciones alternadas */
+  --color-surface:      #1A1A1A;   /* tarjetas, modales, inputs */
+  --color-surface-hover:#222222;   /* hover sobre superficies */
+
+
+  /* =============================================
+     COLORES — TEXTO
+     Dos niveles: texto principal y texto muted
+     (descripciones, subtítulos, placeholders)
+  ============================================= */
+  --color-text:         #F0F0F0;   /* texto estándar, casi blanco */
+  --color-text-muted:   #8A8A8A;   /* texto secundario / descriptivo */
+  --color-text-disabled:#4A4A4A;   /* texto deshabilitado */
+  --color-text-inverse: #0A0A0A;   /* texto sobre fondos claros */
+
+
+  /* =============================================
+     COLORES — PRIMARY (Rojo)
+     Para botones principales, links, CTAs
+  ============================================= */
+  --color-primary:          #CC0000;
+  --color-primary-hover:    #A80000;
+  --color-primary-subtle:   rgba(204, 0, 0, 0.12);  /* fondo sutil de badges, chips */
+
+
+  /* =============================================
+     COLORES — ACCENT (Amarillo)
+     Para highlights, tags, detalles decorativos
+  ============================================= */
+  --color-accent:           #FFD600;
+  --color-accent-hover:     #D4B200;
+  --color-accent-subtle:    rgba(255, 214, 0, 0.12);
+
+
+  /* =============================================
+     COLORES — BORDES
+  ============================================= */
+  --color-border:       #242424;   /* borde sutil, para separadores */
+  --color-border-strong:#383838;   /* borde más visible, para inputs */
+
+
+  /* =============================================
+     COLORES — ESTADOS
+     Semánticos: éxito, error, advertencia, info
+  ============================================= */
+  --color-success:        #22C55E;
+  --color-success-subtle: rgba(34, 197, 94, 0.12);
+
+  --color-error:          #EF4444;
+  --color-error-subtle:   rgba(239, 68, 68, 0.12);
+
+  --color-warning:        #F59E0B;
+  --color-warning-subtle: rgba(245, 158, 11, 0.12);
+
+  --color-info:           #3B82F6;
+  --color-info-subtle:    rgba(59, 130, 246, 0.12);
+
+
+  /* =============================================
+     SOMBRAS
+     Más intensas que en temas claros porque
+     el contraste sombra/fondo es diferente
+  ============================================= */
+  --shadow-sm:      0 1px 4px  rgba(0, 0, 0, 0.5);
+  --shadow-md:      0 4px 12px rgba(0, 0, 0, 0.6);
+  --shadow-lg:      0 8px 24px rgba(0, 0, 0, 0.7);
+  --shadow-primary: 0 4px 20px rgba(204, 0, 0, 0.3);  /* glow rojo para hover de CTAs */
+  --shadow-accent:  0 4px 20px rgba(255, 214, 0, 0.2);
+
+
+  /* =============================================
+     ESPACIADO
+     Escala basada en múltiplos de 4px.
+     Empieza en 2px para detalles muy finos.
+     Nombre nemotécnico: 1=2px, 2=4px, 3=8px...
+  ============================================= */
+  --space-1:  2px;
+  --space-2:  4px;
+  --space-3:  8px;
+  --space-4:  12px;
+  --space-5:  16px;
+  --space-6:  20px;
+  --space-7:  24px;
+  --space-8:  32px;
+  --space-9:  40px;
+  --space-10: 48px;
+  --space-11: 64px;
+  --space-12: 80px;
+  --space-13: 96px;
+  --space-14: 128px;
+
+
+  /* =============================================
+     BORDER RADIUS
+  ============================================= */
+  --radius-none: 0;
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-2xl:  24px;
+  --radius-pill: 9999px;
+
+
+  /* =============================================
+     TIPOGRAFÍA — FAMILIAS
+  ============================================= */
+  --font-heading: 'Syne', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+
+  /* =============================================
+     TIPOGRAFÍA — TAMAÑOS
+     Escala modular. Base: 16px (1rem)
+  ============================================= */
+  --text-xs:   0.75rem;    /*  12px */
+  --text-sm:   0.875rem;   /*  14px */
+  --text-base: 1rem;       /*  16px */
+  --text-lg:   1.125rem;   /*  18px */
+  --text-xl:   1.25rem;    /*  20px */
+  --text-2xl:  1.5rem;     /*  24px */
+  --text-3xl:  1.875rem;   /*  30px */
+  --text-4xl:  2.25rem;    /*  36px */
+  --text-5xl:  3rem;       /*  48px */
+  --text-6xl:  3.75rem;    /*  60px */
+  --text-7xl:  4.5rem;     /*  72px */
+
+
+  /* =============================================
+     TIPOGRAFÍA — PESOS
+  ============================================= */
+  --font-light:     300;
+  --font-regular:   400;
+  --font-medium:    500;
+  --font-semibold:  600;
+  --font-bold:      700;
+  --font-extrabold: 800;
+  --font-black:     900;
+
+
+  /* =============================================
+     TIPOGRAFÍA — LINE HEIGHT (interlineado)
+  ============================================= */
+  --leading-none:    1;
+  --leading-tight:   1.2;   /* títulos grandes */
+  --leading-snug:    1.35;  /* subtítulos */
+  --leading-normal:  1.5;   /* body text estándar */
+  --leading-relaxed: 1.75;  /* texto de lectura larga */
+
+
+  /* =============================================
+     TIPOGRAFÍA — LETTER SPACING
+  ============================================= */
+  --tracking-tight:  -0.03em;  /* títulos muy grandes se ven mejor apretados */
+  --tracking-normal:  0em;
+  --tracking-wide:    0.05em;  /* labels, tags, caps */
+  --tracking-wider:   0.1em;
+
+
+  /* =============================================
+     TRANSICIONES
+     Duraciones y easing estándar para que
+     todas las animaciones se sientan coherentes
+  ============================================= */
+  --duration-fast:   100ms;
+  --duration-base:   200ms;
+  --duration-slow:   350ms;
+
+  --ease-default:    ease;
+  --ease-in:         cubic-bezier(0.4, 0, 1, 1);
+  --ease-out:        cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out:     cubic-bezier(0.4, 0, 0.2, 1);
+
+
+  /* =============================================
+     Z-INDEX
+     Escala para manejar capas sin entrar en
+     el caos del z-index: 9999
+  ============================================= */
+  --z-below:   -1;
+  --z-base:     0;
+  --z-raised:   10;   /* cards con hover elevado */
+  --z-dropdown: 100;  /* menús desplegables */
+  --z-sticky:   200;  /* navbar fijo */
+  --z-overlay:  300;  /* fondos de modal */
+  --z-modal:    400;  /* modales */
+  --z-toast:    500;  /* notificaciones */
+  --z-tooltip:  600;  /* tooltips, siempre encima de todo */
+
+
+  /* =============================================
+     LAYOUT
+     Anchos máximos para containers
+  ============================================= */
+  --container-sm:  640px;
+  --container-md:  768px;
+  --container-lg:  1024px;
+  --container-xl:  1280px;
+  --container-2xl: 1440px;
+
+}
