@@ -1,1 +1,8 @@
-// Acá van a vivir todas las interfaces y tipos TypeScript del proyecto
+// =============================================
+// NAV
+// =============================================
+
+export interface NavItem {
+  label: string
+  to: string
+}

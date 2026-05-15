@@ -197,4 +197,7 @@
   --container-lg: 1024px;
   --container-xl: 1280px;
   --container-2xl: 1440px;
+
+  /* Altura Nav */
+  --navbar-height: 72px;
 }

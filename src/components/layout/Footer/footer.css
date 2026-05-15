@@ -1,0 +1,17 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-7) var(--space-8);
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--container-xl);
+  margin: 0 auto;
+}
+
+.footer__copy {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
