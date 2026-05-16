@@ -1,6 +1,6 @@
 # Portfolio web personal de Marco Pozo
 
-SPA frontend hecha con React y TypeScript usando Vite como build tool. El objetivo es tener un portfolio profesional con secciones de proyectos, about, contacto e info general. También sirve como proyecto de aprendizaje de TypeScript. Las rutas son /, /projects, /about y /contact, manejadas con React Router. Los estilos son CSS vanilla con metodología BEM.
+SPA frontend hecha con React y TypeScript usando Vite como build tool. El objetivo es tener un portfolio profesional con secciones de proyectos, about, contacto e info general. También sirve como proyecto de aprendizaje de TypeScript. Manejamos las con React Router. Los estilos son CSS vanilla con metodología BEM.
 
 ## Reglas generales
 
@@ -20,6 +20,10 @@ Tipos de navegación
 
 Nada de `// ============ Tipos ============` ni `// --- Tipos ---`. Se ve innecesariamente ruidoso.
 
+## Interfaces y tipos
+
 Todas las interfaces y tipos de TypeScript van en src/types/index.ts. No se definen tipos locales dentro de los componentes a menos que sea algo muy específico que no tenga sentido compartir. Cuando importes tipos desde esa carpeta siempre usá import type en lugar de import normal.
+
+## Componentes Layout
 
 Los componentes de layout como Navbar, Footer y Layout siguen la misma estructura que las páginas: cada uno en su propia subcarpeta con su archivo tsx, su css y su index.ts para reexportar.
