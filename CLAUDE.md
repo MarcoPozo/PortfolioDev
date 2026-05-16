@@ -26,7 +26,7 @@ Todas las interfaces y tipos de TypeScript van en src/types/index.ts. No se defi
 
 ## Variables CSS
 
-Prohibido hardcodear colores, tamaños, espaciados o cualquier valor visual. Siempre usá variables de src/styles/variables.css. Si la variable que necesitás no existe, la creás ahí y después la usás.
+Prohibido hardcodear colores, tamaños, espaciados o cualquier valor visual. Siempre usá variables de src/styles/variables.css. Si la variable que necesitás no existe, la creás ahí y después la usás. Excepción: top, left, bottom y right pueden usar píxeles directos cuando el valor es un desplazamiento posicional exacto.
 
 ## Componentes Layout
 
