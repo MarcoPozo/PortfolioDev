@@ -86,7 +86,7 @@
 .navbar__link::after {
   content: '';
   position: absolute;
-  bottom: calc(var(--navbar-underline-offset) * -1);
+  bottom: -4px;
   left: 0;
   width: 0;
   height: var(--navbar-underline-height);
