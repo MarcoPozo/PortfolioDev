@@ -145,4 +145,14 @@
   --container-2xl: 1440px;
 
   --navbar-height: 72px;
+  --navbar-icon-size: 36px;
+  --navbar-blur: 12px;
+  --navbar-bg-scrolled: rgba(10, 10, 10, 0.85);
+  --navbar-underline-offset: 4px;
+  --navbar-underline-height: 2px;
+
+  /* UI */
+  --scrollbar-width: 6px;
+  --focus-outline-width: 2px;
+  --focus-outline-offset: 3px;
 }

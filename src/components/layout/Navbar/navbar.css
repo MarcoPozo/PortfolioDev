@@ -12,9 +12,9 @@
 
 /* Navbar con fondo cuando se hace scroll */
 .navbar--scrolled {
-  background-color: rgba(10, 10, 10, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: var(--navbar-bg-scrolled);
+  backdrop-filter: blur(var(--navbar-blur));
+  -webkit-backdrop-filter: blur(var(--navbar-blur));
   border-bottom-color: var(--color-border);
 }
 
@@ -30,10 +30,22 @@
 /* Logo */
 .navbar__logo {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-4);
   text-decoration: none;
   line-height: var(--leading-none);
+}
+
+.navbar__logo-icon {
+  height: var(--navbar-icon-size);
+  width: auto;
+}
+
+.navbar__logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
 }
 
 .navbar__logo-name {
@@ -74,10 +86,10 @@
 .navbar__link::after {
   content: '';
   position: absolute;
-  bottom: -4px;
+  bottom: calc(var(--navbar-underline-offset) * -1);
   left: 0;
   width: 0;
-  height: 2px;
+  height: var(--navbar-underline-height);
   background-color: var(--color-primary);
   border-radius: var(--radius-pill);
   transition: width var(--duration-base) var(--ease-out);

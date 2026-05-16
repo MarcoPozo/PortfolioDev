@@ -24,6 +24,10 @@ Nada de `// ============ Tipos ============` ni `// --- Tipos ---`. Se ve innece
 
 Todas las interfaces y tipos de TypeScript van en src/types/index.ts. No se definen tipos locales dentro de los componentes a menos que sea algo muy específico que no tenga sentido compartir. Cuando importes tipos desde esa carpeta siempre usá import type en lugar de import normal.
 
+## Variables CSS
+
+Prohibido hardcodear colores, tamaños, espaciados o cualquier valor visual. Siempre usá variables de src/styles/variables.css. Si la variable que necesitás no existe, la creás ahí y después la usás.
+
 ## Componentes Layout
 
 Los componentes de layout como Navbar, Footer y Layout siguen la misma estructura que las páginas: cada uno en su propia subcarpeta con su archivo tsx, su css y su index.ts para reexportar.

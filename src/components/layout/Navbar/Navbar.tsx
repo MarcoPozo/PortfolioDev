@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom'
 
 import type { NavItem } from '@/types'
 
+import isotipo from '@/assets/images/isotipo-marcode.png'
+
 import './navbar.css'
 
 const NAV_ITEMS: NavItem[] = [
@@ -31,8 +33,11 @@ function Navbar() {
     <header className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
       <div className='navbar__container'>
         <NavLink to='/' className='navbar__logo'>
-          <span className='navbar__logo-name'>Marco Pozo</span>
-          <span className='navbar__logo-alias'>@MarCode</span>
+          <img src={isotipo} alt='MarCode' className='navbar__logo-icon' />
+          <div className='navbar__logo-text'>
+            <span className='navbar__logo-name'>Marco Pozo</span>
+            <span className='navbar__logo-alias'>@MarCode</span>
+          </div>
         </NavLink>
 
         <nav className='navbar__nav'>
